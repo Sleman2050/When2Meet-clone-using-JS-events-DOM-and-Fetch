@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#timeTable{
+    max-height: 50vh;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 1%;
+    text-align: center;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+td.time-slot {
+    cursor: pointer;
+}
+
+.time-slot.selected {
+    background-color: #4CAF50;
+    color: #ffffff;
+}
+
+.availability-list {
+    margin-top: 20px;
+}
+
+.availability-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.meeting-info {
+    margin-bottom: 5%;
+}
+.meeting-info label {
+    display: block;
+    font-size: 16px;
+}
+.meeting-info input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 20%;
+    font-size: 16px;
+}
+
+#create-event {
+    background-color: #f6f6f6;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px #0000001a;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#create-event button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #828282;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#create-event button:hover {
+    background-color: #dbdbdb;
+    color: #000;
+}
+
